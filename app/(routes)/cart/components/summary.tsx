@@ -48,10 +48,10 @@ const Summary = () => {
                         <div className="text-base font-medium text-gray-900">
                             Order Tool
                         </div>
-                    </div>
-                    <Currencey value={totalPrice}/>
+                        <Currencey value={totalPrice}/>
+                    </div>     
                 </div>
-            <Button onClick={onCheckout} className="w-full mt-6">
+            <Button disabled={items.length=== 0} onClick={onCheckout} className="w-full mt-6">
                 Checkout
             </Button>
         </div>
